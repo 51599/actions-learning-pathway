@@ -1,0 +1,9 @@
+name: hello-codeshuttle
+on: push
+jobs:
+  hello-codeshuttle-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Cheggin out
+        uses: actions/checkout@v3
+      - run: echo "$(cate hello_word.txt)"
